@@ -1,0 +1,259 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+}
+
+header {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 5%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerLeftSide {
+    padding-right: 60px;
+    padding-top: 5px;
+}
+
+.profileStroke {
+    display: none;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 835px;
+    height: 40px;
+    background: #ffffff;
+    border: 1px solid #ebebf1;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.loupe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 9px;
+    padding-right: 4px;
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    width: 100%;
+    max-width: 800px;
+}
+
+.searchInput::placeholder {
+    font-family: "Roboto", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #BBC4D6;
+}
+
+.greyLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 19px;
+}
+
+.userProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.userProfile:hover {
+    cursor: url("assets/logo/cursor.svg"), pointer;
+
+}
+
+.userName {
+    font-family: "Roboto", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 10px;
+    color: #768298;
+}
+
+.partnersTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.contentTitle {
+    font-family: "Roboto", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 57.6px;
+    width: 1240px;
+}
+
+.partnersContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 600px;
+}
+
+.frame {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    gap: 30px;
+    max-width: 1240px;
+    height: 120px;
+}
+
+.rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 287.5px;
+    height: 120px;
+    background: #ffffff;
+    border: 1px solid #ebebf1;
+    border-radius: 5px;
+}
+
+.rectangle:hover,
+.search:hover {
+    box-shadow: -3px 0 40px rgba(0, 0, 0, 0.1),
+    0 0 10px rgba(164, 164, 164, 0.03);
+}
+
+.rectangle:hover {
+    cursor: url("assets/logo/cursor.svg"), pointer;
+}
+
+@media screen and (max-width: 1279px) {
+    .headerLeftSide {
+        padding-right: 49px;
+    }
+    .loupe {
+        padding-right: 5px;
+    }
+
+    .search {
+        width: 344px;
+    }
+    .greyLine {
+        padding-left: 50px;
+    }
+    .partnersTitle {
+        margin-top: 65px;
+        margin-bottom: 22px;
+    }
+    .contentTitle {
+        font-family: 'Roboto', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        width: 768px;
+        padding-left: 20px;
+    }
+    .partnersContent {
+        height: 600px;
+    }
+    .frame {
+        width: 768px;
+        gap: 20px;
+        padding-left: 20px;
+    }
+    .rectangle {
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .headerLeftSide {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        height: 63px;
+        width: 100%;
+        padding: 15px 20px 9px 20.94px;
+    }
+    .profileStroke {
+        display: block;
+    }
+    .profileStroke img {
+        padding-top: 3px;
+        padding-left: 5px;
+    }
+    .search {
+        border-radius: 0;
+        width: 100%;
+        border: none;
+        border-top: 1px solid #ebebf1;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        height: 42px;
+        padding-bottom: 2px;
+    }
+    .loupe {
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+    .searchInput {
+        height: 31px;
+    }
+    .greyLine,
+    .userProfile {
+        display: none;
+    }
+    .partnersTitle {
+        margin-top: 95px;
+        margin-bottom: 30px;
+    }
+    .contentTitle {
+        font-family: 'Roboto', serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 160%;
+        width: 375px;
+        padding-left: 20px;
+        text-transform: uppercase;
+    }
+    .partnersContent {
+        height: 1200px;
+    }
+    .frame {
+        width: 375px;
+    }
+    .rectangle {
+        width: 335px;
+        height: 140px;
+    }
+}
